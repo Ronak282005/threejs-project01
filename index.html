@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>threeJs</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+  
+  <!-- Navbar -->
+  <nav class="nav bg-black p-4">
+    <div class="container mx-auto flex items-center justify-between">
+      <div class="flex img items-center">
+        <img src="https://preview.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=1080&crop=smart&auto=webp&s=0e62e74ba8b5ef6191228e855079491cfa56f57b" alt="Logo" class="h-10 absolute logo">
+      </div>
+      <div class="flex links space-x-4">
+        <a href="#" class="hover:text-gray-400">Games</a>
+        <a href="#" class="hover:text-gray-400">Community</a>
+        <a href="#" class="hover:text-gray-400">News</a>
+        <a href="#" class="hover:text-gray-400">Shop</a>
+        <a href="#" class="hover:text-gray-400">Suppport</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="main w-full">
+    <div class="w-full h-screen overflow-hidden relative" id="scene">
+      <canvas class="absolute top-0 left-0 w-full h-full"></canvas>
+      <img src="https://preview.redd.it/3d-rendered-the-cyberpunk-logo-using-blender-v0-khopj82wqee91.png?width=1080&crop=smart&auto=webp&s=0e62e74ba8b5ef6191228e855079491cfa56f57b" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mix-blend-screen filter saturation-150 contrast-125 cyber" alt="Centered Image">
+    </div>
+  </div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
